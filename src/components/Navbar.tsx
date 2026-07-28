@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon, Download, CodeXml } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { developerProfile } from '../data';
+import { DownloadCVButton } from './DownloadCVButton';
 
 interface NavbarProps {
   isDark: boolean;
@@ -88,7 +89,7 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
               {developerProfile.name.split(' ')[0]}
               <span className="text-indigo-600">.</span>
             </span>
-            <span className="font-mono text-[10px] tracking-wider text-gray-500 dark:text-gray-400 block -mt-1 uppercase">
+            <span className="font-mono  text-[10px] tracking-wider text-gray-500 dark:text-gray-400 block mt-1 uppercase">
               Full-Stack
             </span>
           </div>
@@ -132,14 +133,15 @@ export default function Navbar({ isDark, toggleTheme }: NavbarProps) {
           </button>
 
           {/* Download Resume */}
-          <a
+          {/* <a
             id="resume-btn-desktop"
             href={developerProfile.resumeUrl}
             className="flex items-center gap-2 px-5 py-2.5 bg-gray-900 hover:bg-indigo-600 dark:bg-white dark:hover:bg-indigo-500 text-white dark:text-gray-900 dark:hover:text-white rounded-full font-sans font-medium text-sm transition-all duration-300 shadow-md hover:shadow-indigo-600/25 dark:hover:shadow-indigo-500/20"
           >
             <span>CV</span>
             <Download className="w-4 h-4" />
-          </a>
+          </a> */}
+          <DownloadCVButton />
         </div>
 
         {/* Mobile Nav Toggle */}

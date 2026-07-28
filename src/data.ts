@@ -1,7 +1,7 @@
 import { DeveloperProfile, Skill, Service, Project, Experience, Testimonial } from './types';
 
 export const developerProfile: DeveloperProfile = {
-  name: "Muhammad Abdullah Reza",
+  name: "Muhammad Abdullah Ibne Masud",
   title: "Information Technology Leader & Software Solution Architect",
   tagline: "Architecting high-performance enterprise applications, driving digital transformation, and leading engineering teams.",
   bio: "Results-driven Information Technology Leader and Software Solution Architect with over 20 years of professional experience in designing, developing, and delivering enterprise-scale software solutions. Proven expertise in software architecture, team leadership, web application development, digital transformation, and enterprise HRMS solutions.",
@@ -11,14 +11,14 @@ export const developerProfile: DeveloperProfile = {
   happyClients: 24,
   technologiesCount: 20,
   resumeUrl: "#",
-  email: "mdabdullah@gmail.com",
+  email: "abdullah.masud@banglalink.net",
   phone: "01962424629",
   location: "Dhaka, Bangladesh (Available for Remote Work)",
   socials: {
     github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/aimreza/",
     twitter: "https://twitter.com",
-    facebook: "https://facebook.com"
+    facebook: "https://www.facebook.com/aimreza/"
   }
 };
 
