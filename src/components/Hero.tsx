@@ -3,6 +3,7 @@ import { ArrowRight, Mail, Download, Github, Linkedin, Facebook, Twitter, Termin
 import { motion } from 'motion/react';
 import { developerProfile } from '../data';
 
+
 // Custom Lucide mapping or inline SVGs for beautiful floating icons
 const FloatingIcon = ({ children, className, delay = 0, duration = 6 }: { children: ReactNode, className: string, delay?: number, duration?: number }) => (
   <motion.div
@@ -53,6 +54,7 @@ export default function Hero() {
       });
     }
   };
+  const ProfileImage = "/reza.jpg";
 
   return (
     <section
@@ -245,8 +247,8 @@ export default function Hero() {
             {/* Main Profile Portrait Frame */}
             <div className="absolute inset-4 rounded-2xl bg-gray-950/40 backdrop-blur-sm overflow-hidden border border-white/10 dark:border-white/5 flex items-center justify-center z-10 shadow-inner">
               <img
-                src="/src/assets/images/developer_profile_avatar_1784610160374.jpg"
-                alt="Alex Thorne - Full Stack Developer"
+                 src={ProfileImage ?? "https://i.ibb.co.com/1GXHwjy6/reza.jpg"}
+                alt="Md Abdullah Reza - Full Stack Developer"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 select-none"
                 referrerPolicy="no-referrer"
               />
@@ -255,7 +257,7 @@ export default function Hero() {
             {/* Developer Title Tag Floating Inside */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 px-5 py-2.5 bg-black/80 backdrop-blur-md border border-white/10 rounded-full flex items-center gap-2 shadow-xl whitespace-nowrap">
               <Terminal className="w-4 h-4 text-emerald-400" />
-              <span className="font-mono text-[10px] text-white tracking-widest uppercase font-semibold">~/src/alex-portfolio.ts</span>
+              <span className="font-mono text-[10px] text-white tracking-widest uppercase font-semibold">~/src/reza-portfolio.ts</span>
             </div>
           </motion.div>
 
@@ -263,7 +265,7 @@ export default function Hero() {
           <FloatingIcon className="top-[10%] left-[-5%] text-indigo-500" delay={0}>
             <span className="font-mono text-xs font-bold text-gray-900 dark:text-white flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-sky-400 inline-block"></span>
-              React
+              PHP
             </span>
           </FloatingIcon>
 
@@ -277,14 +279,14 @@ export default function Hero() {
           <FloatingIcon className="top-[30%] right-[-10%] text-emerald-500" delay={0.8} duration={5.5}>
             <span className="font-mono text-xs font-bold text-gray-900 dark:text-white flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-indigo-400 inline-block"></span>
-              TypeScript
+              DevOps
             </span>
           </FloatingIcon>
 
           <FloatingIcon className="bottom-[35%] right-[-8%] text-amber-500" delay={2.2} duration={6.5}>
             <span className="font-mono text-xs font-bold text-gray-900 dark:text-white flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-green-500 inline-block"></span>
-              Node.js
+              Python
             </span>
           </FloatingIcon>
         </div>

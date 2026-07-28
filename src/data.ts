@@ -1,18 +1,18 @@
 import { DeveloperProfile, Skill, Service, Project, Experience, Testimonial } from './types';
 
 export const developerProfile: DeveloperProfile = {
-  name: "Mohammad Abdullah",
-  title: "AI-Driven Full-Stack Engineer",
-  tagline: "Architecting high-performance web applications and seamlessly integrating cutting-edge AI technologies.",
-  bio: "I am a passionate Full-Stack Developer and AI Integration Specialist with over 3 years of professional experience crafting visually stunning user interfaces and robust architectures. By combining AI-driven capabilities with modular clean code, I build digital experiences that are blazing fast, intelligent, and highly optimized.",
-  journey: "My journey is defined by a commitment to modern full-stack engineering and deep AI integration. I specialize in leveraging advanced tools like Gemini, ChatGPT, Google AI Studio, and Lavable AI to implement automation, interactive intelligence, and production-ready applications that solve real-world problems.",
-  yearsOfExperience: 3,
-  projectsCompleted: 52,
+  name: "Muhammad Abdullah Reza",
+  title: "Information Technology Leader & Software Solution Architect",
+  tagline: "Architecting high-performance enterprise applications, driving digital transformation, and leading engineering teams.",
+  bio: "Results-driven Information Technology Leader and Software Solution Architect with over 20 years of professional experience in designing, developing, and delivering enterprise-scale software solutions. Proven expertise in software architecture, team leadership, web application development, digital transformation, and enterprise HRMS solutions.",
+  journey: "Throughout his career, he has worked with renowned organizations including Banglalink, Accenture, GPIT, BRAC IT Services, COCOSOFT, Arena Phone Bangladesh Ltd., and Symcynet Limited, successfully leading cross-functional teams and delivering high-impact software products for telecom, banking, and enterprise organizations.",
+  yearsOfExperience: 20,
+  projectsCompleted: 100,
   happyClients: 24,
-  technologiesCount: 23,
-  resumeUrl: "#", // User can link their actual CV
-  email: "islamul.net@gmail.com",
-  phone: "01640128028",
+  technologiesCount: 20,
+  resumeUrl: "#",
+  email: "mdabdullah@gmail.com",
+  phone: "01962424629",
   location: "Dhaka, Bangladesh (Available for Remote Work)",
   socials: {
     github: "https://github.com",
@@ -23,246 +23,260 @@ export const developerProfile: DeveloperProfile = {
 };
 
 export const skillsData: Skill[] = [
-  // AI Tools
-  { name: "Gemini API", category: "ai", icon: "Sparkles", proficiency: 96 },
-  { name: "ChatGPT", category: "ai", icon: "Bot", proficiency: 95 },
-  { name: "Google AI Studio", category: "ai", icon: "Wand2", proficiency: 94 },
-  { name: "Lavable AI", category: "ai", icon: "Cpu", proficiency: 88 },
-  { name: "Claude AI", category: "ai", icon: "Brain", proficiency: 90 },
+  // Core Engineering & Frameworks
+  { name: "PHP", category: "backend", icon: "Server", proficiency: 96 },
+  { name: "Symfony", category: "backend", icon: "Cpu", proficiency: 92 },
+  { name: "CodeIgniter", category: "backend", icon: "Combine", proficiency: 88 },
+  { name: "JavaScript", category: "frontend", icon: "Braces", proficiency: 90 },
+  { name: "jQuery / jQuery UI", category: "frontend", icon: "Layers", proficiency: 90 },
+  { name: "HTML / CSS", category: "frontend", icon: "FileCode", proficiency: 95 },
 
-  // Frontend
-  { name: "React.js", category: "frontend", icon: "Atom", proficiency: 94 },
-  { name: "Next.js", category: "frontend", icon: "Layers", proficiency: 90 },
-  { name: "TypeScript", category: "frontend", icon: "Code2", proficiency: 88 },
-  { name: "JavaScript", category: "frontend", icon: "Braces", proficiency: 92 },
-  { name: "Tailwind CSS", category: "frontend", icon: "Palette", proficiency: 95 },
-  { name: "HTML5 & CSS3", category: "frontend", icon: "FileCode", proficiency: 96 },
-  { name: "Bootstrap", category: "frontend", icon: "LayoutTemplate", proficiency: 85 },
-  
-  // Backend
-  { name: "PHP", category: "backend", icon: "Server", proficiency: 90 },
-  { name: "Laravel", category: "backend", icon: "Cpu", proficiency: 92 },
-  { name: "CodeIgniter", category: "backend", icon: "Combine", proficiency: 80 },
-  { name: "Node.js", category: "backend", icon: "Terminal", proficiency: 86 },
-  { name: "REST API", category: "backend", icon: "Webhook", proficiency: 94 },
+  // Databases
+  { name: "MySQL", category: "database", icon: "Database", proficiency: 95 },
+  { name: "Oracle SQL", category: "database", icon: "Database", proficiency: 90 },
 
-  // Database
-  { name: "MySQL", category: "database", icon: "Database", proficiency: 88 },
-  { name: "Firebase", category: "database", icon: "Flame", proficiency: 85 },
-
-  // Tools
-  { name: "Git", category: "tools", icon: "GitBranch", proficiency: 92 },
-  { name: "GitHub", category: "tools", icon: "Github", proficiency: 95 },
-  { name: "Vite", category: "tools", icon: "Zap", proficiency: 90 },
-  { name: "Postman", category: "tools", icon: "Send", proficiency: 88 }
+  // Architecture & Methodologies
+  { name: "Solution Architecture", category: "tools", icon: "Wand2", proficiency: 96 },
+  { name: "Enterprise HRMS", category: "tools", icon: "Cpu", proficiency: 98 },
+  { name: "REST API & Web Services", category: "backend", icon: "Webhook", proficiency: 94 },
+  { name: "SDLC & Agile", category: "tools", icon: "Sparkles", proficiency: 95 },
+  { name: "DevOps & Linux Shell", category: "tools", icon: "Terminal", proficiency: 88 },
+  { name: "Python", category: "backend", icon: "Code2", proficiency: 85 },
+  { name: "Git & Source Control", category: "tools", icon: "GitBranch", proficiency: 92 }
 ];
 
 export const servicesData: Service[] = [
   {
-    id: "frontend-dev",
-    title: "Frontend Development",
-    description: "Crafting beautiful, accessible, and pixel-perfect responsive user interfaces with modern React and Tailwind CSS. Optimized for core web vitals.",
-    icon: "Monitor",
-    features: ["Component-Driven Architecture", "Tailwind CSS Precision", "Accessible HTML/ARIA", "Interactive animations"]
-  },
-  {
-    id: "fullstack-dev",
-    title: "Full-Stack Web Development",
-    description: "End-to-end web applications connecting slick frontend layers to powerful databases and servers. Fully integrated, secure, and production-ready.",
-    icon: "Globe",
-    features: ["SPA / SSR rendering", "Relational & Real-time Databases", "Secure Sessions & Auth", "Full deployment setup"]
-  },
-  {
-    id: "react-next-dev",
-    title: "React & Next.js Development",
-    description: "Developing modern Next.js SaaS platforms utilizing Server Components, progressive hydration, and optimized routing for premium performance.",
-    icon: "Atom",
-    features: ["Server-Side Rendering (SSR)", "Incremental Static Regeneration", "Dynamic Route Systems", "SEO optimized layout"]
-  },
-  {
-    id: "laravel-backend",
-    title: "Laravel Backend Development",
-    description: "Architecting powerful secure server environments with Laravel. Expert custom business logic, secure database schemas, and background job queues.",
+    id: "solution-architecture",
+    title: "Software Solution Architecture",
+    description: "Architecting scalable, resilient, and enterprise-grade software solutions with clean code, solid design patterns, and robust databases.",
     icon: "Cpu",
-    features: ["MVC Architecture", "Artisan Ecosystem", "ORM (Eloquent) database design", "Middleware & security guards"]
+    features: ["Enterprise Architecture", "System Design", "Database Modeling", "Performance Tuning"]
   },
   {
-    id: "rest-api-design",
-    title: "REST API Development",
-    description: "Building fast, well-documented, and secure RESTful endpoints for web applications, mobile sync, or third-party service connections.",
-    icon: "Webhook",
-    features: ["Standardized JSON responses", "JWT/Sanctum Token Auth", "Rate Limiting & Throttle", "Comprehensive documentation"]
-  },
-  {
-    id: "responsive-web",
-    title: "Responsive Web Design",
-    description: "Ensuring your website looks incredible and adapts organically across every device layout: ultra-wide monitors, tablets, and mobile devices.",
-    icon: "Smartphone",
-    features: ["Mobile-first layouts", "Fluid grids & viewport styling", "Adaptive image assets", "Touch-gesture optimizations"]
-  },
-  {
-    id: "admin-dashboards",
-    title: "Admin Dashboard Development",
-    description: "Feature-rich admin panels with complex data charts, CSV exports, content management (CMS), user controls, and metrics monitoring.",
+    id: "hrms-solutions",
+    title: "Enterprise HRMS Solutions",
+    description: "Designing and deploying complete Human Resource Management Systems including Payroll, Attendance, Leave Management, and Travel Modules.",
     icon: "LayoutDashboard",
-    features: ["Interactive D3/Recharts visualizers", "User Role Permissions", "Content Management Systems", "Data filtering & batch processing"]
+    features: ["Employee Management", "Payroll & Attendance", "HR Operations", "Enterprise Reporting"]
   },
   {
-    id: "ecommerce-solutions",
-    title: "E-commerce Development",
-    description: "Scalable online stores featuring robust catalogs, filterable searches, shopping carts, checkout checkout pipelines, and payment gateways.",
-    icon: "ShoppingBag",
-    features: ["Stripe / PayPal Gateway integration", "Order management engines", "Inventory tracking hooks", "Automated email receipts"]
+    id: "tech-leadership",
+    title: "Technical Leadership & Team Mentoring",
+    description: "Leading cross-functional engineering teams, task planning, CMMI process execution, and mentoring developers for quality delivery.",
+    icon: "Monitor",
+    features: ["Sprint Planning", "Code Reviews", "Cross-Functional Collaboration", "Crisis Management"]
+  },
+  {
+    id: "digital-transformation",
+    title: "Digital Transformation & Telecom Services",
+    description: "Driving digital innovation, customer self-service applications, mobile content solutions, and API integrations for enterprise telecommunications.",
+    icon: "Globe",
+    features: ["Self-Care Apps", "RAFM Solutions", "Mobile Content Engine", "Telecom VAS"]
+  },
+  {
+    id: "fullstack-enterprise",
+    title: "Enterprise Web Development",
+    description: "Building robust, secure backend and frontend architectures using PHP, Symfony, CodeIgniter, JavaScript, MySQL, and Oracle.",
+    icon: "Server",
+    features: ["LAMP Stack", "RESTful Web Services", "Secure Payment/VAS Pipelines", "Legacy Code Optimization"]
   }
 ];
 
 export const projectsData: Project[] = [
   {
-    id: "nexas-saas",
-    title: "Nexas AI SaaS Platform",
-    description: "A comprehensive generative AI workspace. Includes real-time AI image generation, automated document analysis, and text synthesis powered by the Gemini API. Features multi-user workspaces and subscription Billing pipelines.",
+    id: "mybl-app",
+    title: "MyBL App",
+    description: "A complete self-service mobile application enabling Banglalink customers to access services including balance checking, usage history, latest offers, account management, and digital services.",
     category: "fullstack",
-    tags: ["React.js", "Next.js", "TypeScript", "Node.js", "Firebase", "Tailwind CSS"],
+    tags: ["Banglalink", "Digital Transformation", "Self-Care", "REST API"],
     liveUrl: "#",
     githubUrl: "https://github.com",
-    image: "https://picsum.photos/seed/nexas/800/600",
+    image: "https://picsum.photos/seed/mybl/800/600",
     featured: true
   },
   {
-    id: "laracart-ecommerce",
-    title: "LaraCart E-Commerce Engine",
-    description: "A high-performance online retail engine built with Laravel. Features advanced product filtering, dynamic cart systems with Redis, complete checkout processes with Stripe, and an extensive admin analytics control panel.",
-    category: "laravel",
-    tags: ["PHP", "Laravel", "MySQL", "Tailwind CSS", "Bootstrap", "REST API"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
-    image: "https://picsum.photos/seed/laracart/800/600",
-    featured: true
-  },
-  {
-    id: "crypto-bento",
-    title: "Cryptocurrency Bento Dashboard",
-    description: "An elegant crypto tracker designed with a Bento-grid layout. Displays live-updating tickers, historical price charts using Recharts, asset search, portfolio transaction loggers, and customizable price-drop alert notifications.",
-    category: "react",
-    tags: ["React.js", "TypeScript", "Tailwind CSS", "Recharts", "Vite", "Git"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
-    image: "https://picsum.photos/seed/cryptobento/800/600",
-    featured: true
-  },
-  {
-    id: "apex-kanban",
-    title: "Apex Collaborative Kanban Board",
-    description: "A real-time workspace for task management. Features smooth drag-and-drop lists, task checklists, member assignments, live chats on tasks, and robust activity logs. Works fully offline with local-first syncing.",
-    category: "frontend",
-    tags: ["React.js", "TypeScript", "Tailwind CSS", "motion", "Vite", "REST API"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
-    image: "https://picsum.photos/seed/kanban/800/600",
-    featured: false
-  },
-  {
-    id: "rest-booking-api",
-    title: "Resto Table Booking System & API",
-    description: "A headless booking engine for restaurants. Provides clean developer APIs for scheduling tables, staff check-ins, automated reservation notifications via SMS/Email, and interactive seating chart designers.",
+    id: "city-bank-hrms",
+    title: "City Bank HRMS",
+    description: "A complete Human Resource Management System (HRMS) developed for The City Bank Limited featuring Employee Management, Leave Management, Payroll Support, Attendance, and Enterprise Reporting.",
     category: "backend",
-    tags: ["Node.js", "CodeIgniter", "MySQL", "REST API", "Postman", "Git"],
+    tags: ["GPIT", "HRMS", "Oracle", "PHP", "Enterprise Reporting"],
     liveUrl: "#",
     githubUrl: "https://github.com",
-    image: "https://picsum.photos/seed/restoapi/800/600",
-    featured: false
+    image: "https://picsum.photos/seed/cityhrms/800/600",
+    featured: true
   },
   {
-    id: "vibe-music-spa",
-    title: "Vibe Music Streaming Interface",
-    description: "A client-side single page app featuring music search, visual equalizers, custom playlist management, seamless transitions, and offline audio caching utilizing HTML5 service workers.",
-    category: "frontend",
-    tags: ["JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Vite", "GitHub"],
+    id: "gplife-2",
+    title: "GPLife 2.0",
+    description: "Enterprise HRMS platform used by Grameenphone employees. Led technical team, backend modules, Travel Management Module, and stakeholder coordination.",
+    category: "fullstack",
+    tags: ["Accenture", "HRMS", "Grameenphone", "Symfony", "MySQL"],
     liveUrl: "#",
     githubUrl: "https://github.com",
-    image: "https://picsum.photos/seed/vibemusic/800/600",
-    featured: false
+    image: "https://picsum.photos/seed/gplife/800/600",
+    featured: true
   }
 ];
 
 export const experienceData: Experience[] = [
   {
-    id: "exp-1",
-    role: "Senior Full-Stack Developer",
-    company: "DevCraft Solutions",
-    duration: "2024 - Present",
+    id: "exp-bl-1",
+    role: "Digital Solution & Service Chartered Engineer",
+    company: "Banglalink",
+    duration: "April 2023 – Present",
     description: [
-      "Led a development team of 4 to architect and ship a Laravel/React SaaS dashboard, reducing page load latency by 35%.",
-      "Pioneered TypeScript integration across all legacy codebases, resulting in a 40% reduction in production crash logs.",
-      "Engineered automated REST APIs serving over 1M+ requests daily with JWT authentication and strict security headers."
+      "Responsible for designing and delivering enterprise digital solutions, driving innovation, and supporting digital transformation initiatives."
     ],
     type: "experience",
-    tags: ["React.js", "Laravel", "TypeScript", "MySQL", "REST API"]
+    tags: ["Digital Transformation", "Solution Architecture", "Telecom Solutions"]
   },
   {
-    id: "exp-2",
-    role: "Full-Stack Developer (Freelance / Contract)",
-    company: "Thorne Digital Labs",
-    duration: "2022 - 2024",
+    id: "exp-bl-2",
+    role: "Information Technology Lead Engineer",
+    company: "Banglalink",
+    duration: "February 2018 – Present",
     description: [
-      "Shipped 25+ pixel-perfect client websites and web applications across real estate, fintech, and e-commerce spaces.",
-      "Built custom WooCommerce/Shopify connections and unique, lightweight themes utilizing Tailwind CSS and Bootstrap.",
-      "Designed and deployed responsive server setups on AWS and Firebase, maintaining 99.9% uptime statistics."
+      "Leading software engineering teams and guiding enterprise application architecture.",
+      "Spearheading digital product development and technical delivery (e.g., MyBL App).",
+      "Mentoring engineers and facilitating cross-functional stakeholder collaboration."
     ],
     type: "experience",
-    tags: ["Next.js", "PHP", "Firebase", "Tailwind CSS", "Git"]
+    tags: ["Software Architecture", "Team Leadership", "MyBL App", "Agile"]
   },
   {
-    id: "edu-1",
-    role: "B.S. in Computer Science & Engineering",
-    company: "State University",
-    duration: "2018 - 2022",
+    id: "exp-accenture-1",
+    role: "Software Engineer Team Lead",
+    company: "Accenture",
+    duration: "July 2014 – November 2017",
     description: [
-      "Specialized in Software Engineering, Web Systems, and Database Architectures.",
-      "Acquired core skills in Data Structures, Algorithms, Object-Oriented Programming, and Relational Database Systems."
+      "Led technical teams responsible for developing enterprise applications using LAMP technologies.",
+      "Managed software architecture, task planning, project delivery, and client communication."
     ],
-    type: "education",
-    tags: ["Computer Science", "Algorithms", "Databases", "Networks"]
+    type: "experience",
+    tags: ["LAMP", "Team Leadership", "Software Architecture", "Mentoring"]
   },
   {
-    id: "cert-1",
-    role: "Advanced Full-Stack Engineering Certification",
-    company: "Tech Academy Global",
-    duration: "2023",
+    id: "exp-accenture-2",
+    role: "Software Engineering Senior Analyst",
+    company: "Accenture",
+    duration: "January 2014 – June 2014",
     description: [
-      "Professional intensive focus on Node.js microservices, complex state design patterns in React, and backend security optimizations."
+      "Responsible for the complete Software Development Life Cycle (SDLC), task distribution, project monitoring, and reporting project progress to management."
+    ],
+    type: "experience",
+    tags: ["SDLC", "Project Management", "Reporting"]
+  },
+  {
+    id: "exp-bracit",
+    role: "Consultant",
+    company: "BRAC IT Services Ltd.",
+    duration: "2016",
+    description: [
+      "Worked as a software consultant for enterprise-level solution development."
+    ],
+    type: "experience",
+    tags: ["Consulting", "Enterprise Solutions"]
+  },
+  {
+    id: "exp-gpit-1",
+    role: "Solution Specialist",
+    company: "GPIT",
+    duration: "September 2012 – December 2013",
+    description: [
+      "Led the development of enterprise HRMS applications (e.g., City Bank HRMS).",
+      "Architected application and database design following CMMI-based software development process."
+    ],
+    type: "experience",
+    tags: ["HRMS", "Database Design", "CMMI Process", "Technical Leadership"]
+  },
+  {
+    id: "exp-gpit-2",
+    role: "Specialist – RAFM & IT Consultant",
+    company: "GPIT",
+    duration: "March 2011 – September 2012",
+    description: [
+      "Worked on Revenue Assurance and Fraud Management (RAFM) solutions.",
+      "Led software development teams utilizing PHP, MySQL, Oracle, and Symfony Framework."
+    ],
+    type: "experience",
+    tags: ["RAFM", "PHP", "Oracle", "Symfony"]
+  },
+  {
+    id: "exp-cocosoft",
+    role: "Senior Software Engineer",
+    company: "COCOSOFT",
+    duration: "March 2010 – March 2011",
+    description: [
+      "Managed development teams and crafted enterprise web applications as well as BlackBerry applications."
+    ],
+    type: "experience",
+    tags: ["PHP", "BlackBerry Apps", "Web Applications"]
+  },
+  {
+    id: "exp-arena",
+    role: "Senior Software Engineer",
+    company: "Arena Phone Bangladesh Ltd.",
+    duration: "June 2007 – February 2010",
+    description: [
+      "Delivered mobile content solutions for global telecom operators (Airtel, Etisalat, Reliance, BSNL, Claro, Proximus, etc.).",
+      "Utilized PHP, Python, Linux Shell, FFmpeg, ImageMagick, and Java ME."
+    ],
+    type: "experience",
+    tags: ["Telecom Content", "PHP", "Python", "FFmpeg", "Linux Shell"]
+  },
+  {
+    id: "exp-symcynet",
+    role: "Web Developer",
+    company: "Symcynet Limited",
+    duration: "December 2006 – June 2007",
+    description: [
+      "Started professional software development career as a Web Developer."
+    ],
+    type: "experience",
+    tags: ["Web Development", "PHP", "HTML/CSS"]
+  },
+  {
+    id: "edu-sust",
+    role: "Bachelor of Science (B.Sc.) in Computer Science & Engineering",
+    company: "Shahjalal University of Science and Technology (SUST)",
+    duration: "2001 – 2006",
+    description: [
+      "Major Courses: C, C++, Java, Assembly, Algorithms, Database Systems, Artificial Intelligence, Operating Systems, Computer Networks, Data Communications, Image Processing."
     ],
     type: "education",
-    tags: ["Node.js", "System Architecture", "Security", "Microservices"]
+    tags: ["SUST", "CSE", "Algorithms", "Software Engineering"]
+  },
+  {
+    id: "edu-bogura",
+    role: "Higher Secondary Certificate (HSC)",
+    company: "Govt. Azizul Haque College, Bogura",
+    duration: "1998 – 2000",
+    description: [
+      "Science background with excellence in Mathematics, Physics, and Chemistry."
+    ],
+    type: "education",
+    tags: ["HSC", "Science"]
   }
 ];
 
 export const testimonialsData: Testimonial[] = [
   {
-    id: "test-1",
-    name: "Sarah Jenkins",
-    role: "Product Director",
-    company: "Vortex Technologies",
-    content: "Alex is an absolute gem of a developer. He took our complex, fragmented wireframes and turned them into a visually stunning, responsive, and insanely fast SaaS dashboard in Next.js. His eye for micro-interactions is matched only by his strong backend engineering skills.",
-    rating: 5,
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
-  },
-  {
-    id: "test-2",
-    name: "Marcus Sterling",
-    role: "Founder & CEO",
-    company: "Aero Logistics",
-    content: "Collaborating with Alex on our automated inventory dashboard with Laravel was a seamless experience. He didn't just write clean code; he actively suggested architectural improvements that saved us thousands in monthly cloud costs. Highly recommended!",
+    id: "rec-1",
+    name: "Monwar Hussain",
+    role: "Strategy, Research & Business Development",
+    company: "Telecom / Tech Enterprise",
+    content: "Recognized Muhammad Abdullah Reza for outstanding delivery quality, leading teams of 3–6 engineers, managing complex enterprise modules, excellent stakeholder communication, strong ownership and crisis management, high integrity, and empowering engineering teams.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop"
   },
   {
-    id: "test-3",
-    name: "Elena Rostova",
-    role: "Lead Creative",
-    company: "Hologram Agency",
-    content: "Alex bridged the gap between code and design flawlessly. He implemented motion transitions that were incredibly smooth and performant, maintaining our high design fidelity. He responds quickly, works efficiently, and delivers top-tier work.",
+    id: "rec-2",
+    name: "Shuvankar Halder",
+    role: "Full Stack Developer | Zend Certified PHP Engineer",
+    company: "Software Industry",
+    content: "A perfect technical leader with a strong professional personality.",
     rating: 5,
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
   }
 ];
