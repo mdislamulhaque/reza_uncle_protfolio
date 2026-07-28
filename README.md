@@ -18,3 +18,4 @@ View your app in AI Studio: https://ai.studio/apps/2210bde5-24b6-4531-b486-66dd6
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+4. install type `npm i --save-dev @types/react`
